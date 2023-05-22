@@ -28,11 +28,11 @@ app.get('/data', (req, res) => {
           return `${name} ${age}`;
         });
     
-        // Join the extracted values with a space separator
-        const result = output.join(' ');
+        // Join the entries with a newline character
+        const result = output.join('\n');
     
         // Send the result as the response
-        res.send(result);
+        res.send(`${result}`);
       }
     });
   });

@@ -1,4 +1,4 @@
-fetch('http://localhost:4004/data')
+fetch('/data')
         .then(response => response.text())
         .then(data => {
           document.getElementById('data').textContent = data;

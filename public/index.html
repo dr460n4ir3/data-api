@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Data Api</title>
+    <style>
+      .data-container {
+        white-space: pre-line;
+        color: orangered;
+      }
+    </style>
   </head>
   <body>
     <h1>View Data Below</h1>
-    <p id="data"></p>
+    <div class="data-container">
+      <p id="data"></p>
+    </div>
+    <br />
+    <h1>Submit Data Below</h1>
     <form action="/submit" method="post">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" />
